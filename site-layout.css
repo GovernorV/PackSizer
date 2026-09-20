@@ -1,0 +1,27 @@
+/* Full-width artwork, shared catalog banners, and the product introduction. */
+.hero-banner{margin-top:32px;overflow:hidden;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);background:#061425}
+.hero-banner img{display:block;width:100%;height:auto}
+.hero{display:block;padding:40px 0}
+.hero-copy{max-width:900px}
+.hero h1{font-size:clamp(40px,5vw,64px)}
+.hero h2 br{display:none}
+.lead{max-width:850px}
+.related-card{padding:0;overflow:hidden}
+.related-card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;margin:0;background:#fff}
+.related-body{display:flex;flex:1;flex-direction:column;padding:20px}
+.related-body .text-link{margin-top:auto}
+.report-summary b{overflow-wrap:anywhere;font-size:clamp(24px,2.5vw,32px)}
+@media(max-width:1050px){.related{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.hero-banner{margin-top:20px;border-radius:12px}.hero{padding:30px 0}.related{grid-template-columns:1fr}}
+
+/* Shared catalog card from the OptPacker website. */
+.smart-related-card{overflow:hidden;border:1px solid rgba(125,155,190,.28);border-radius:20px;background:rgba(15,35,60,.72);box-shadow:0 18px 46px rgba(0,0,0,.15)}
+.smart-related-card>a:first-child{display:block;background:#fff}
+.smart-related-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain}
+.smart-related-body{padding:20px}
+.smart-related-body h3{margin:0 0 8px;font-size:1.18rem}
+.smart-related-body p{min-height:3.2em;margin:0 0 16px;opacity:.76}
+.smart-related-link,.smart-catalog-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid rgba(125,155,190,.34);border-radius:12px;color:inherit;font-weight:800;text-decoration:none}
+.smart-related-link:hover,.smart-catalog-link:hover{border-color:#22d3ee;transform:translateY(-1px)}
+.smart-catalog-card{border-color:rgba(47,117,255,.38)}
+html[data-theme="day"] .smart-related-card{background:rgba(255,255,255,.92);color:#10233d;box-shadow:0 18px 46px rgba(24,54,84,.1)}
